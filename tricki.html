@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Tricki</title>
+<!-- 
+Tricki version 1.1.0
+Copyright (C) 2013 Gary Bilkus
+This program is distributed unter the terms of the GNU General Public License.
+You use this program at your own risk.
+-->
+    <script type="text/javascript" src="/javascript/tricki.js"> </script>
+    <script type="text/javascript" src="/javascript/sjcl.js"> </script>
+    <script type="text/javascript" src="/javascript/prototype.js"> </script>
+    <script type="text/javascript" src="/javascript/davclient.js/jsbase/testing.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/jsbase/exception.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/jsbase/string.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/jsbase/array.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/jsbase/misclib.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/minisax.js/minisax.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/dommer/dommer.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/davclient.js"></script>
+    <script type="text/javascript" src="/javascript/davclient.js/davfs.js"></script>
+    <script>
+    </script>
+</head>
+<!-- Please customize the line below with the correct protocol, website, port and webdav location
+Also modify the locations above of the script files if necessary -->
+<body onload="initall('https','www.greenwheel.com',443,'/securefiles/');">
+   <div id="header1" >
+   <b>Tricki</b>
+   <input type="button" value="Goto" onclick="gotopage()" />
+   <input type="text" size="30" name="gotoPage" id="gotoPage" value="main" />
+   <input type="button" value="Show Source" onclick="showSource();"/>
+   <input type="button" value="Update" onclick="enc();"/>
+   <input type="button" value="FixW" onclick="fixw();"/>
+   </div>
+   <p/>
+   <div id="firstDiv">
+      <h2>Welcome to Tricki</h2>Enter the password for the site:
+      <input id="password" type="password" size="30"> </input>
+      <p/><a href="javascript:getstarted()">Then click here to goto the main page</a>
+   </div>
+   <p/>
+   <div id="secondDiv" >
+   <textarea id="pageText" rows="10" cols="80" name="pageText" type="text" value="visible" > </textarea>
+   </div>
+   <form id="theForm" onsubmit="return false;">
+   </form>
+</body>
+</html>
+

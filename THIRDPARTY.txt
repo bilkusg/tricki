@@ -1,0 +1,8 @@
+This application depends heavily on three third-party libraries.
+Copies of the relevant files are included here to make it easy to deploy 
+tricki without worrying about the detail. But I like to give credit where
+it's due
+
+So thanks to prototype.js http://prototypejs.org for dom manipulation
+and to http://crypto.standord.edu/jscl for the Stanford Crypto Library
+and to http://debris.demon.nl/javascript for davclient.js

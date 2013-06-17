@@ -1,0 +1,18 @@
+	Alias /javascript/ /opt/greenwheel/javascript/
+	<Directory "/opt/greenwheel/javascript">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+	</Directory>
+        Alias /securefiles/ /opt/greenwheel/var/securefiles/
+	<Directory "/opt/greenwheel/var/securefiles">
+		Dav on
+		Order allow,deny
+		Allow from all
+                AuthType Basic
+  		AuthName "Authentication Required"
+  		AuthUserFile "/opt/greenwheel/var/htpasswd/.htpasswd"
+  		Require valid-user 
+	</Directory>
+

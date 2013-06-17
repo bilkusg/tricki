@@ -1,0 +1,11 @@
+To install this program;
+
+1. Set up your webserver with webdav, a location for javascript files, and ssl ( strongly recommended )
+2. copy the contents of the javascript directory to your javascript location
+3. copy tricki.html to your website
+4. edit tricki.html to tell it where to find the scripts and the web server etc.
+Follow the comments in the file to help, but it should be fairly obvious
+
+
+The apache subdirectory contains some useful sample config files which may help
+you get going.
