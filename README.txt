@@ -19,3 +19,5 @@ accessible information in the cloud.
 tricki was implemented by Gary Bilkus during June 2013, and is now an open 
 source project on github
 
+For more information - see the tricki wiki on github at http://github.com/bilkusg/tricki/wiki/
+
